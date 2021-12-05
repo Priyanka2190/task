@@ -194,8 +194,13 @@ img {
 }
 
 .border-right {
-  border-right: 1px solid #707070;
+  border-right: 1px solid rgba(122, 122, 122, 0.3);
   padding-right: 3%;
+}
+
+.container-out {
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 /* -----------------------------------------------------------
@@ -416,7 +421,7 @@ img {
   height: 12px;
   padding-left: 4px;
   margin-left: 4px;
-  border-left: 1px solid;
+  border-left: 1px solid rgba(122, 122, 122, 0.3);
 }
 
 .text.icon::before {
@@ -432,12 +437,12 @@ img {
   font-family: latoSemibold;
   color: #000;
   font-size: 13px;
-  color: #707070;
+  color: rgba(122, 122, 122, 0.3);
 }
 
 .check-status {
   background-color: #FAFAFC;
-  border: 1px solid #707070;
+  border: 1px solid rgba(122, 122, 122, 0.3);
   padding: 15px 25px;
   margin-bottom: 30px;
 }
@@ -582,7 +587,7 @@ img {
   content: "";
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-top: 10px solid #707070;
+  border-top: 10px solid rgba(122, 122, 122, 0.3);
   width: 0;
   height: 0;
   margin-left: 10px;
@@ -594,7 +599,7 @@ img {
   content: "";
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
-  border-bottom: 10px solid #707070;
+  border-bottom: 10px solid rgba(122, 122, 122, 0.3);
   border-top: 0;
   width: 0;
   height: 0;
@@ -602,7 +607,7 @@ img {
 }
 
 .nested-accordion .acc-head.child {
-  box-shadow: 0.5px 0.5px 4px #707070;
+  box-shadow: 0.5px 0.5px 4px rgba(122, 122, 122, 0.3);
   padding: 10px 15px;
   display: flex;
   justify-content: left;
@@ -652,7 +657,7 @@ img {
 }
 
 .nested-accordion .comment.child {
-  box-shadow: 0.5px 0.5px 4px #707070;
+  box-shadow: 0.5px 0.5px 4px rgba(122, 122, 122, 0.3);
   padding: 20px 14px;
 }
 
@@ -737,12 +742,12 @@ img {
 }
 
 .drop .cont .desc {
-  color: #707070;
+  color: rgba(122, 122, 122, 0.3);
   margin-top: 10px;
 }
 
 .drop .cont .browse {
-  color: #707070;
+  color: rgba(122, 122, 122, 0.3);
 }
 
 .drop .cont input {
@@ -921,7 +926,7 @@ img {
   float: left;
   margin-left: 10px;
   cursor: pointer;
-  color: #707070;
+  color: rgba(122, 122, 122, 0.3);
   font-family: 'lato';
   border: 1px solid;
   border-radius: 50%;
@@ -945,7 +950,7 @@ img {
   font-size: 1.6rem;
   margin-left: 10px;
   cursor: pointer;
-  color: #707070;
+  color: rgba(122, 122, 122, 0.3);
   font-family: 'lato';
   border: 1px solid;
   border-radius: 50%;
@@ -1004,7 +1009,7 @@ img {
 }
 
 .update-check {
-  border: 1px solid #707070;
+  border: 1px solid rgba(122, 122, 122, 0.3);
   padding: 8px;
   width: 91%;
   margin-bottom: 20px;
@@ -1029,7 +1034,7 @@ img {
   line-height: 17px;
   font-family: lato;
   color: #000;
-  color: #707070;
+  color: rgba(122, 122, 122, 0.3);
 }
 
 .update-check .text span.blue-font {
@@ -1052,7 +1057,7 @@ img {
 
 .icon.icon-house {
   padding: 10px;
-  border: 1px solid;
+  border: 1px solid rgba(122, 122, 122, 0.3);
   border-radius: 50%;
 }
 
@@ -1065,7 +1070,7 @@ img {
 
 .icon.icon-appraisal {
   padding: 10px;
-  border: 1px solid;
+  border: 1px solid rgba(122, 122, 122, 0.3);
   border-radius: 50%;
 }
 
@@ -1078,7 +1083,7 @@ img {
 
 .icon.icon-nhd {
   padding: 10px;
-  border: 1px solid;
+  border: 1px solid rgba(122, 122, 122, 0.3);
   border-radius: 50%;
 }
 
@@ -1091,7 +1096,7 @@ img {
 
 .icon.icon-close {
   padding: 10px;
-  border: 1px solid;
+  border: 1px solid rgba(122, 122, 122, 0.3);
   border-radius: 50%;
 }
 

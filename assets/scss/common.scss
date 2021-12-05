@@ -149,6 +149,10 @@ img {
   text-align: center;
 }
 .border-right {
-  border-right: $border $color-light-gray;
+  border-right: $border $color-light-gray-opacity;
   padding-right: 3%;
+}
+.container-out {
+  max-width: 1600px;
+  margin: 0 auto;
 }

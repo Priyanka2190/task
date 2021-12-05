@@ -41,7 +41,7 @@
 		float: left;
 		margin-left: 10px;
 		cursor: pointer;
-		color: $color-light-gray;
+		color: $color-light-gray-opacity;
 		font-family: 'lato';
 		border: 1px solid;
 		border-radius: 50%;
@@ -64,7 +64,7 @@
 		font-size: 1.6rem;
 		margin-left: 10px;
 		cursor: pointer;
-		color: $color-light-gray;
+		color: $color-light-gray-opacity;
 		font-family: 'lato';
 		border: 1px solid;
 		border-radius: 50%;
@@ -117,7 +117,7 @@
 	border: 0px solid;
 }
 .update-check {
-    border: 1px solid $color-light-gray;
+    border: 1px solid $color-light-gray-opacity;
     padding: 8px;
     width: 91%;
     margin-bottom: 20px;
@@ -133,7 +133,7 @@
             }
             &.light-gray {  
               @include font-14;
-              color: $color-light-gray;
+              color: $color-light-gray-opacity;
             }
             &.blue-font {
                 font-size: 14px;
@@ -153,7 +153,7 @@
 .icon {
     &.icon-house {
         padding: 10px;
-        border: 1px solid;
+        border: 1px solid $color-light-gray-opacity;
         border-radius: 50%;
         &::before {
             background: url(./../images/house.svg) no-repeat;
@@ -164,7 +164,7 @@
     }
     &.icon-appraisal {
         padding: 10px;
-        border: 1px solid;
+        border: 1px solid $color-light-gray-opacity;
         border-radius: 50%;
         &::before {
             background: url(./../images/appraisal.svg) no-repeat;
@@ -175,7 +175,7 @@
     }
     &.icon-nhd {
         padding: 10px;
-        border: 1px solid;
+        border: 1px solid $color-light-gray-opacity;
         border-radius: 50%;
         &::before {
             background: url(./../images/deadline.svg) no-repeat;
@@ -186,7 +186,7 @@
     }
     &.icon-close {
         padding: 10px;
-        border: 1px solid;
+        border: 1px solid $color-light-gray-opacity;
         border-radius: 50%;
         &::before {
             background: url(./../images/close.svg) no-repeat;
