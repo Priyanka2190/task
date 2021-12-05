@@ -1,0 +1,198 @@
+/* -----------------------------------------------------------
+ Updates css
+----------------------------------------------------------- */
+.key-dates {
+    @include font-14-semibold;
+    font-size: 22px;
+    margin-left: 14px;
+    .blue-font {
+        font-size: 14px;
+        @include font-14;
+        color: $primary-color;
+        cursor: pointer;
+    }
+}
+.calendar-container {
+	margin: 20px 0 0;
+	width: 94%;
+	height: 250px;
+	font-family: 'Roboto';
+	border-radius: 8px 8px 0px 0px;
+	background-color: white;
+}
+.ui-datepicker-header {
+	background-color: $color-white;
+	color: $color-black;
+	text-align: center;
+	font-family: 'Roboto';
+	padding: 10px;
+	height: 40px;
+	border-radius: 8px 8px 0px 0px;
+	border: 0px solid;
+}
+.ui-datepicker-prev {
+	span {
+		display: none !important;
+		color: $color-white;
+	}
+	&:after {
+		content: "<";
+		font-size: 1.6rem;
+		float: left;
+		margin-left: 10px;
+		cursor: pointer;
+		color: $color-light-gray;
+		font-family: 'lato';
+		border: 1px solid;
+		border-radius: 50%;
+		padding: 0 8px;
+		margin-top: 7px;
+	}
+    &:hover {
+        background: none;
+        border: 1px solid transparent;
+    }
+}
+.ui-datepicker-next {
+	span {
+		display: none !important;
+		color: $color-white;
+	}
+	&:after {
+		content: ">";
+		float: right;
+		font-size: 1.6rem;
+		margin-left: 10px;
+		cursor: pointer;
+		color: $color-light-gray;
+		font-family: 'lato';
+		border: 1px solid;
+		border-radius: 50%;
+		padding: 0 8px;
+		margin-top: 7px;
+		cursor: pointer;
+	}
+    &:hover {
+        background: none;
+        border: 1px solid transparent;
+    }
+}
+.ui-datepicker-calendar {
+	th {
+		padding: 10px;
+		color: $primary-color;
+	}
+	text-align: center;
+	margin: 0 auto;
+	padding: 8px;
+	td {
+		padding: 4px 0px;
+	}
+	.ui-state-default {
+		text-decoration: none;
+		color: black;
+		border: 0px solid;
+		background: none;
+	}
+	.ui-state-active {
+		color: $primary-color;
+	}
+}
+.ui-datepicker-title {
+	padding: 10px;
+}
+.ui-datepicker {
+	td {
+		span {
+			padding: 0;
+			text-align: center;
+		}
+		a {
+			padding: 0;
+			text-align: center;
+		}
+	}
+}
+.ui-widget.ui-widget-content {
+	border: 0px solid;
+}
+.update-check {
+    border: 1px solid $color-light-gray;
+    padding: 8px;
+    width: 91%;
+    margin-bottom: 20px;
+    .text {
+        span {
+            width: 100%;
+            display: block;
+            margin: 0 7px;
+        
+            &.red {  
+              @include font-14;
+              color: $color-red;
+            }
+            &.light-gray {  
+              @include font-14;
+              color: $color-light-gray;
+            }
+            &.blue-font {
+                font-size: 14px;
+                @include font-14;
+                color: $primary-color;
+            }
+        }
+    }
+    .date {
+        text-align: center;
+        span {
+            width: 100%;
+            display: block;
+        }
+    }
+}
+.icon {
+    &.icon-house {
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 50%;
+        &::before {
+            background: url(./../images/house.svg) no-repeat;
+            width: 26px;
+            height: 26px;
+            display: block;
+        }
+    }
+    &.icon-appraisal {
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 50%;
+        &::before {
+            background: url(./../images/appraisal.svg) no-repeat;
+            width: 26px;
+            height: 26px;
+            display: block;
+        }
+    }
+    &.icon-nhd {
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 50%;
+        &::before {
+            background: url(./../images/deadline.svg) no-repeat;
+            width: 26px;
+            height: 26px;
+            display: block;
+        }
+    }
+    &.icon-close {
+        padding: 10px;
+        border: 1px solid;
+        border-radius: 50%;
+        &::before {
+            background: url(./../images/close.svg) no-repeat;
+            width: 26px;
+            height: 26px;
+            display: block;
+        }
+    }
+}

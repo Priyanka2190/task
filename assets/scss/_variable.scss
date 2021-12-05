@@ -1,0 +1,156 @@
+// Fonts
+$latoRegular: lato;
+$latoSemibold: latoSemibold;
+$latoHeavy: latoHeavy;
+
+@font-face {
+    font-family: 'lato';
+    src: url(../fonts/Lato-Regular.ttf) format('truetype'),
+}
+@font-face {
+    font-family: 'latoSemibold';
+    src: url(../fonts/Lato-Bold.ttf) format('truetype'),
+}
+@font-face {
+    font-family: 'latoHeavy';
+    src: url(../fonts/Lato-Black.ttf) format('truetype'),
+}
+// Width
+$zero: 0;
+$width-100: 100%;
+$width-1240px: 1240px;
+$width-479px: 479px;
+
+// Text styles
+$text-uppercase: uppercase;
+$text-underline: underline;
+
+// Float
+$left: left;
+$right: right;
+
+// border
+$border: 1px solid;
+$border-0: 0px solid;
+
+// center 
+$centered-element: 0 auto;
+$center: center;
+
+// colors
+$primary-color: #033363;
+$color-secondary-blue: #0B5AA5;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-dark-gray: #333333;
+$color-light-gray: #707070;
+$color-red: #D70909;
+$color-light-blue: #FAFAFC;
+$color-green: #21BA45;
+$color-yellow: #CFAB00;
+$color-orange: #E27700;
+$color-gray: #666666;
+$none: none;
+
+// positions
+$static: static;
+$relative: relative;
+$absolute: absolute;
+$fixed: fixed;
+
+// display
+$block: block;
+$inline-block: inline-block;
+$flex: flex;
+
+// media screens
+$screen-1400: "only screen and (max-width : 1400px)";
+$screen-1280: "only screen and (max-width : 1280px)";
+$screen-999: "only screen and (max-width : 999px)";
+$screen-767: "only screen and (max-width : 767px)";
+$screen-480: "only screen and (max-width : 480px)";
+$screen-380: "only screen and (max-width : 380px)";
+
+// cursor
+$pointer: pointer;
+
+// Transitions
+@mixin transition-all {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; 
+}
+
+// Transitions
+@mixin align-element-center {
+    display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex; 
+  display: -webkit-flex; 
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap; 
+  -webkit-box-orient: horizontal; 
+  -webkit-box-direction: normal; 
+  -ms-flex-direction: row; 
+  flex-direction: row; 
+  -webkit-box-pack: start; 
+  -ms-flex-pack: start; 
+  justify-content: center; 
+  -webkit-box-align: center; 
+  -ms-flex-align: center; 
+  align-items: center; 
+  -ms-flex-line-pack: center; 
+  align-content: center;
+}
+
+// Align vertically center
+@mixin align-element-vertical-center {
+    display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex; 
+  display: -webkit-flex; 
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap; 
+  -webkit-box-orient: horizontal; 
+  -webkit-box-direction: normal; 
+  -ms-flex-direction: row; 
+  flex-direction: row; 
+  -webkit-box-pack: start; 
+  -ms-flex-pack: start; 
+  justify-content: flex-start; 
+  -webkit-box-align: center; 
+  -ms-flex-align: center; 
+  align-items: center; 
+  -ms-flex-line-pack: center; 
+  align-content: center;
+}
+@mixin font-white-16 {
+    font-size: 16px;
+	line-height: 19px;
+	font-family: $latoRegular;
+	color: #fff;
+}
+@mixin font-14 {
+    font-size: 14px;
+	line-height: 17px;
+	font-family: $latoRegular;
+	color: #000;
+}
+@mixin font-12-regular {
+    font-size: 12px;
+	line-height: 15px;
+	font-family: $latoRegular;
+	color: #000;
+}
+@mixin font-14-semibold {
+    font-size: 14px;
+	line-height: 17px;
+	font-family: $latoSemibold;
+	color: #000;
+}
+@mixin font-22-heavy {
+    font-size: 22px;
+	line-height: 27px;
+	font-family: $latoHeavy;
+	color: #000;
+}

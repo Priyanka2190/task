@@ -1,0 +1,441 @@
+/* -----------------------------------------------------------
+ Main body css
+----------------------------------------------------------- */
+.middle-section {
+	width: 100%;
+	max-width: 856px;
+}
+.number {
+	@include font-22-heavy;
+	&.red-font {
+		color: $color-red
+	}
+
+}
+.text {
+	@include font-14-semibold;
+	&.small {
+		@include font-12-regular;
+	}
+	&.icon {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&::before {
+			background: url(./../images/edit.svg) no-repeat;
+			margin-right: 4px;
+			width: 12px;
+    		height: 12px;
+		}
+    &.icon-info {
+      &::before {
+        background: none;
+        content: none;
+      }
+      &::after {
+        content: "";
+        background: url(./../images/info.svg) no-repeat;
+        width: 8px;
+        height: 12px;
+        padding-left: 4px;
+        margin-left: 4px;
+        border-left: 1px solid;
+      }
+    }
+    &::before {
+      background: url(./../images/wall-clock.svg) no-repeat;
+    }
+    
+    
+	}
+  &.time {
+    position: absolute;
+    right: 40px;
+    top: 10px;
+    @include font-14-semibold;
+    font-size: 13px;
+    color: $color-light-gray;
+
+  } 
+}
+.check-status {
+	background-color: $color-light-blue;
+	border: 1px solid $color-light-gray;
+	padding: 15px 25px;
+	margin-bottom: 30px;
+}
+.status-details {
+	text-align: center;
+}
+.team {
+	.text {
+		margin-bottom: 10px;
+	}
+}
+.team-images {
+	display: flex;
+	img {
+		margin-right: -8px;
+	}
+	.team-size {
+		border: 1px solid;
+		width: 40px;
+		height: 40px;
+		background: $color-white;
+		border-radius: 50%;
+		padding: 0 6px;
+		@include font-white-16;
+		color: $color-light-gray;
+		display: flex;
+    	align-items: center;
+	}
+}
+.end-section {
+	width: 100%;
+	max-width: 300px;
+}
+.tasks-offers {
+	align-items: center;
+}
+.task {
+    padding: 6px 10px 8px;
+		border-radius: 3px;
+	@include font-14;
+	span {
+		background-color: $color-white;
+		border-radius: 50%;
+		padding: 0 7px 2px;
+    margin-left: 6px;
+	}
+	&.light-blue {
+		background-color: $color-secondary-blue;
+		color: $color-white;
+		span {
+			color: $color-black;
+			
+		}
+	}
+  &.red {
+    color: $color-red;
+    span {
+      background-color: $color-red;
+      color: $color-white;
+    }
+  }
+  &.blue-primary {
+    color: $primary-color;
+    span {
+      background-color: $primary-color;
+      color: $color-white;
+    }
+  }
+  &.yellow {
+    color: $color-yellow;
+    span {
+      background-color: $color-yellow;
+      color: $color-white;
+    }
+  }
+  &.green {
+    color: $color-green;
+    span {
+      background-color: $color-green;
+      color: $color-white;
+    }
+  }
+  &.orange {
+    color: $color-orange;
+    span {
+      background-color: $color-orange;
+      color: $color-white;
+    }
+  }
+  &.gray {
+    color: $color-gray;
+    span {
+      background-color: $color-gray;
+      color: $color-white;
+    }
+  }
+}
+
+.nested-accordion {
+  margin-top: 0.5em;
+  cursor: pointer;
+  .acc-head {
+    padding: 0;
+    color: #47a3da;
+    .task {
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      &:after {
+        content: "";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid $color-light-gray;
+        width: 0;
+        height: 0;
+        margin-left: 10px;
+        transition: all 0.4s ease;
+        display: block;
+      }
+    }
+    &.selected {
+      .task {
+        &:after {
+          content: "";
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid $color-light-gray;
+          border-top: 0;
+          width: 0;
+          height: 0;
+          margin-left: 10px;
+        }
+      }
+      
+    }
+    &.child {
+      box-shadow: 0.5px 0.5px 4px $color-light-gray;
+      padding: 10px 15px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      text-align: left;
+      border-radius: 2px;
+      .acc-image {
+        img {
+          display: block;
+        }
+      }
+      .acc-detail {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        align-content: flex-start;
+        margin-left: 10px;
+        width: 100%;
+        position: relative;
+      }
+      .task {
+        padding: 0;
+        &::after {
+          position: absolute;
+          right: 0;
+          top: 15px;
+        }
+        .circle {
+          border-radius: 20px;
+          padding: 0 7px 2px;
+          margin-left: 6px;
+          border: 1px solid $primary-color;
+          background-color: $color-white;
+        }
+      }
+    }
+  }
+  .comment {
+    line-height: 1.5;
+    padding: 0.5em;
+    border: 0 solid;
+    border-top: none;
+
+    &.child {
+      box-shadow: 0.5px 0.5px 4px $color-light-gray;
+      padding: 20px 14px;
+    }
+    ul {
+      margin: 0 0 0 16px;
+      padding: 0;
+      li {
+        list-style: disc;
+        @include font-12-regular;
+        font-size: 14px;
+        color: $color-light-gray;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #47a3da;
+  }
+}
+.cta-button {
+  &.icon-external-link {
+    margin-left: 10px;
+    &::before {
+      background: url(./../images/extarnal-icon.svg) no-repeat;
+      width: 11px;
+      height: 10px;
+      margin-right: 4px;
+    }
+  }
+}
+.mls-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  @include font-12-regular;
+  font-size: 13px;
+  color: $color-light-gray;
+  margin-bottom: 20px;
+}
+
+.drop {
+  width: 90%;
+  height: 90%;
+  padding: 5%;
+  border: 3px dashed #DADFE3;
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+  background: white;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  margin: auto;
+  .cont {
+    width: 500px;
+    height: 170px;
+    color: #8E99A5;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    margin: auto;
+    i {
+      font-size: 400%;
+      color: #8E99A5;
+      position: relative;
+    }
+    .tit {
+      font-size: 400%;
+      text-transform: uppercase;
+    }
+    .desc {
+      color: $color-light-gray;
+      margin-top: 10px;
+    }
+    .browse {
+      color: $color-light-gray;
+    }
+    input {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      background: red;
+      opacity: 0;
+      margin: auto;
+    }
+  }
+}
+#list {
+  width: 100%;
+  text-align: left;
+  .thumb {
+    height: 75px;
+    border: 1px solid $color-dark-gray;
+    margin: 10px 5px 0 0;
+  }
+}
+.upload-section {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+.title {
+  @include font-14-semibold;
+  font-size: 20px;
+}
+.icon {
+  &.icon-upload {
+    &::before {
+      background: url(./../images/upload.svg) no-repeat;
+      display: block;
+      width: 90px;
+      height: 90px;
+      margin: 0 auto;
+    }
+  }
+  &.icon-right {
+    background: $color-green;
+    border:0px solid;
+    &::before {
+      background: url(./../images/right.svg) no-repeat;
+      display: block;
+      height: 13px;
+    }
+  }
+}
+.complete-bttn {
+  display: flex;
+  justify-content: right;
+}
+
+.key-dates {
+  display: flex;
+  justify-content: space-between;
+}
+@media #{$screen-1400} {
+  .middle-section {
+    width: 95%;
+    max-width: 770px;
+  }
+
+
+}
+@media #{$screen-1280} {
+  .middle-section {
+    width: 95%;
+    max-width: 700px;
+  }
+
+
+}
+@media #{$screen-999} {
+  .container.flex-section {
+    display: inline-block;
+  }
+  .account-details-section {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+  .middle-section {
+    width: 100%;
+    max-width: none;
+  }
+
+  .end-section {
+    width: 100%;
+    max-width: none;
+  }
+  .check-status {
+    width: 90%;
+    display: inline-block;
+    .status-details {
+      border-right: 0px solid #707070;
+      border-bottom: 1px solid #707070;
+      padding-right: 0;
+      padding-bottom: 3%;
+      margin-bottom: 3%;
+      &:last-child {
+        border-bottom: 0px solid;
+      }
+    }
+  }
+  .tasks-offers {
+    display: inline-block;
+  }
+  .nested-accordion {
+    margin: 0.5em 26px;
+  }
+  .update-section {
+    margin-left: 26px;
+  }
+  .calendar-container {
+    margin: 20px 0 0 18px;
+  }
+}

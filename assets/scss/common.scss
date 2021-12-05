@@ -1,0 +1,154 @@
+/* -----------------------------------------------------------
+ Common css
+----------------------------------------------------------- */
+
+body {
+  padding: $zero;
+  margin: $zero;
+  font-family: $latoRegular;
+}
+
+li {
+  list-style: $none;
+  padding: $zero; 
+  margin: $zero;
+}
+
+a, a:hover, a:focus {
+  color: $color-dark-gray;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.container {  
+  width: $width-100;  
+  display: inline-block;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 856px;
+
+  @media #{$screen-1280} {
+    max-width: $width-1240px - 201px;
+    width: $width-100 - 5;
+  }
+
+  @media #{$screen-767} {
+    width: 90%;
+    margin: 0 5%;
+  }
+
+}
+.blue {
+  background: #033363;
+}
+.red-font {
+  color: #D70909;
+}
+.full-width {
+  width: $width-100;
+  clear: both;
+}
+
+.v-align {
+  display: -webkit-box; 
+  display: -ms-flexbox; 
+  display: flex; 
+  display: -webkit-flex; 
+  -ms-flex-wrap: wrap; 
+  flex-wrap: wrap; 
+  -webkit-box-orient: horizontal; 
+  -webkit-box-direction: normal; 
+  -ms-flex-direction: row; 
+  flex-direction: row; 
+  -webkit-box-pack: start; 
+  -ms-flex-pack: start; 
+  justify-content: flex-start; 
+  -webkit-box-align: center; 
+  -ms-flex-align: center; 
+  align-items: center; 
+  -ms-flex-line-pack: center; 
+  align-content: center;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; 
+    display: table; 
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.centered-element {
+  margin: 0 auto;
+}
+
+.desktop{
+  display: block;
+
+  @media #{$screen-767} {
+    display: none;
+  }
+}
+
+.mobile{
+  display: none;
+
+  @media #{$screen-767} {
+    display: block;
+  }
+}
+
+.comp-left {
+  width: 50%;
+  float: left;
+}
+
+.comp-right {
+  width: 50%;
+  float: right;
+}
+
+.cta-button{
+  font-size: 14px;
+  line-height: 17px;
+  color: $color-white;
+  padding: 7px 0 8px 0;
+  border: $border $color-secondary-blue;
+  display: inline-block;
+  font-family: $latoRegular;
+  width: 179px;
+  height: 39px;
+  text-align: center;
+  background-color: $color-secondary-blue;
+  border-radius: 3px;
+  cursor: pointer;
+
+  @media #{$screen-767} {
+
+    @include align-element-center;
+  }
+  &.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.text-center {
+  text-align: center;
+}
+.border-right {
+  border-right: $border $color-light-gray;
+  padding-right: 3%;
+}

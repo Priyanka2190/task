@@ -1,0 +1,143 @@
+
+/* -----------------------------------------------------------
+ Menu/account details css
+----------------------------------------------------------- */
+.logo {
+	max-width: 143px;
+	display: block;
+}
+.details-section {
+	display: flex;
+	margin: 20px 0;
+}
+.user-img {
+	z-index: 11;
+	display: block;
+	width: 40px;
+	height: 40px;
+}
+.account-dropdown {
+	border: 0 solid #ddd;
+	width: 100%;
+	border-radius: 3px;
+	position: relative;
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 10px 0;
+		border: 0;
+		position: absolute;
+		top: 35px;
+		left: 0;
+		width: 100%;
+		background-color: $color-white;
+	}
+	li {
+		padding: 5px 40px 5px 15px;
+		color: $primary-color;
+		cursor: pointer;
+	}
+	.textfirst {
+		padding: 0;
+		padding: 5px 40px 5px 10px;
+		position: relative;
+		color: $color-white;
+		&::after {
+			content: "";
+			position: absolute;
+			right: 5px;
+			z-index: 11;
+			display: block;
+			width: 10px;
+			height: 10px;
+			border-top: 2px solid $color-light-gray;
+			border-left: 2px solid $color-light-gray;
+			top: 7px;
+			transform: rotate(225deg);
+		}
+	}
+	li:last-child {
+		border-bottom: 0;
+	}
+	li.main {
+		display: block;
+	}
+	li {
+		display: none;
+	}
+	
+}
+.input-option {
+	@include font-white-16;
+}
+.flex-section {
+	display: flex;
+	justify-content: space-between;
+}
+.account-details-section {
+	padding: 15px 10px;
+	max-width: 228px;
+	height: 100vh;
+}
+.icon-head-section {
+	justify-content: flex-start;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	.head {
+		@include font-white-16;
+		margin-left: 10px;
+	}
+	&:hover {
+		background-color: $color-white;
+		.head {
+			color: $primary-color;
+		}
+		.icon {
+			&::before {
+				fill: $primary-color;
+			}
+		}
+	}
+}
+.icon {
+	justify-content: flex-start;
+	&::before {
+		content: "";
+		width: 19px;
+		height: 19px;
+	}
+	
+	&:hover {
+		&::before {
+			fill: $primary-color;
+		}
+	}
+	&.icon-home {
+		&::before {
+			background: url(./../images/home.svg) no-repeat;
+		}
+		
+	}
+	&.icon-star {
+		&::before {
+			background: url(./../images/star.svg) no-repeat;
+		}
+	}
+	&.icon-offer {
+		&::before {
+			background: url(./../images/offer.svg) no-repeat;
+		}
+	}
+	&.icon-exchange {
+		&::before {
+			background: url(./../images/exchange.svg) no-repeat;
+			padding-right: 4px;
+			width: 16px;
+			height: 16px;
+		}
+	}
+}
+.sale {
+	margin: 15px 0;
+}
