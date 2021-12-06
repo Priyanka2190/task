@@ -881,8 +881,7 @@ img {
   line-height: 17px;
   font-family: latoSemibold;
   color: #000;
-  font-size: 22px;
-  margin-left: 14px;
+  font-size: 20px;
 }
 
 .key-dates .blue-font {
@@ -899,7 +898,7 @@ img {
   margin: 20px 0 0;
   width: 94%;
   height: 250px;
-  font-family: 'Roboto';
+  font-family: lato;
   border-radius: 8px 8px 0px 0px;
   background-color: white;
 }
@@ -908,7 +907,7 @@ img {
   background-color: #ffffff;
   color: #000000;
   text-align: center;
-  font-family: 'Roboto';
+  font-family: lato;
   padding: 10px;
   height: 40px;
   border-radius: 8px 8px 0px 0px;
@@ -981,7 +980,7 @@ img {
 
 .ui-datepicker-calendar .ui-state-default {
   text-decoration: none;
-  color: black;
+  color: #000000;
   border: 0px solid;
   background: none;
 }
@@ -1055,8 +1054,11 @@ img {
   display: block;
 }
 
+.icon {
+  padding: 10px 12px;
+}
+
 .icon.icon-house {
-  padding: 10px;
   border: 1px solid rgba(122, 122, 122, 0.3);
   border-radius: 50%;
 }
@@ -1069,7 +1071,6 @@ img {
 }
 
 .icon.icon-appraisal {
-  padding: 10px;
   border: 1px solid rgba(122, 122, 122, 0.3);
   border-radius: 50%;
 }
@@ -1082,7 +1083,6 @@ img {
 }
 
 .icon.icon-nhd {
-  padding: 10px;
   border: 1px solid rgba(122, 122, 122, 0.3);
   border-radius: 50%;
 }
@@ -1095,7 +1095,6 @@ img {
 }
 
 .icon.icon-close {
-  padding: 10px;
   border: 1px solid rgba(122, 122, 122, 0.3);
   border-radius: 50%;
 }
@@ -1105,6 +1104,19 @@ img {
   width: 26px;
   height: 26px;
   display: block;
+}
+
+.key-dates-outer {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 11px 0;
+}
+
+.key-dates-outer .add-key-dates {
+  font-size: 14px;
+  line-height: 17px;
+  font-family: lato;
+  color: #033363;
 }
 
 /*# sourceMappingURL=style.css.map */

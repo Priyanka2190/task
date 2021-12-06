@@ -3,8 +3,7 @@
 ----------------------------------------------------------- */
 .key-dates {
     @include font-14-semibold;
-    font-size: 22px;
-    margin-left: 14px;
+    font-size: 20px;
     .blue-font {
         font-size: 14px;
         @include font-14;
@@ -16,7 +15,7 @@
 	margin: 20px 0 0;
 	width: 94%;
 	height: 250px;
-	font-family: 'Roboto';
+	font-family: $latoRegular;
 	border-radius: 8px 8px 0px 0px;
 	background-color: white;
 }
@@ -24,7 +23,7 @@
 	background-color: $color-white;
 	color: $color-black;
 	text-align: center;
-	font-family: 'Roboto';
+	font-family: $latoRegular;
 	padding: 10px;
 	height: 40px;
 	border-radius: 8px 8px 0px 0px;
@@ -90,7 +89,7 @@
 	}
 	.ui-state-default {
 		text-decoration: none;
-		color: black;
+		color: $color-black;
 		border: 0px solid;
 		background: none;
 	}
@@ -151,8 +150,8 @@
     }
 }
 .icon {
+    padding: 10px 12px;
     &.icon-house {
-        padding: 10px;
         border: 1px solid $color-light-gray-opacity;
         border-radius: 50%;
         &::before {
@@ -163,7 +162,6 @@
         }
     }
     &.icon-appraisal {
-        padding: 10px;
         border: 1px solid $color-light-gray-opacity;
         border-radius: 50%;
         &::before {
@@ -174,7 +172,6 @@
         }
     }
     &.icon-nhd {
-        padding: 10px;
         border: 1px solid $color-light-gray-opacity;
         border-radius: 50%;
         &::before {
@@ -185,7 +182,6 @@
         }
     }
     &.icon-close {
-        padding: 10px;
         border: 1px solid $color-light-gray-opacity;
         border-radius: 50%;
         &::before {
@@ -194,5 +190,16 @@
             height: 26px;
             display: block;
         }
+    }
+}
+.key-dates-outer {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 11px 0;
+    .add-key-dates {
+        font-size: 14px;
+        line-height: 17px;
+        font-family: $latoRegular;
+        color: $primary-color;
     }
 }
